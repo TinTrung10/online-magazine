@@ -1,0 +1,291 @@
+/**
+ * fil: css/style.css
+ **/
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --white: #ffffff;
+  --blue: #b5c1e3;
+  --green: #93e4d3;
+}
+
+/* navigation */
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  width: 100%;
+  background: var(--white);
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  margin-bottom: 50px;
+  margin-top: -60px;
+}
+
+#link{
+  text-decoration: none;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  opacity: 0.7;
+  color: rgba(0,0,0,0.8);
+  margin: 0 50px;
+  margin-top: 100px;
+  cursor: pointer;
+  padding-bottom: 10;
+}
+
+#link:hover{
+  color: var(--green);
+}
+
+#logo{
+ cursor: pointer;
+}
+
+#icon1{
+  margin-top: 100px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+#icon2{
+  margin-top: 100px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  opacity: 0.7;
+  color: rgba(0,0,0,0.8);
+  padding: 60px;
+  cursor: pointer;
+}
+
+/* dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.dropdown-content a {
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--green);
+}
+
+/* startfoto*/
+header{
+  margin-left: 20px;
+  width: 60%;
+  float: left;
+  margin-bottom: 100px;
+}
+
+#startfoto{
+  width: 99%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.7);
+}
+
+/* trendsektion*/
+aside{
+  width: 37%;
+  height: 100%;
+  float: right;
+  display: block;
+  padding-right: 70px;
+  margin-top: -27px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  padding: 5px;
+  flex: 30%;
+}
+
+.imgsize{
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.7);
+}
+
+#trendimg{
+  padding: 0;
+  opacity: inherit;
+}
+
+/* fakeslider */
+* {
+  box-sizing: border-box;
+}
+
+.row1 {
+  display: flex;
+}
+
+.row1 img{
+  width: 100%;
+  height: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.7);
+}
+
+/* Create three equal columns that sits next to each other */
+.column1 {
+  flex: 33.33%;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: -150px;
+}
+
+.caption {
+  display: block;
+}
+
+main{
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  padding-bottom: -10px;
+}
+
+/* footer */
+
+* {
+  box-sizing: border-box;
+}
+
+.row2 {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column2 {
+  flex: 33.33%;
+  padding: 10px;
+}
+
+
+footer{
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+  padding-left: 150px;
+  background-color: var(--blue);
+  border-top: 1px solid black;
+}
+
+.row2 img{
+  margin-left: -15px;
+  cursor: pointer;
+}
+
+.footertxt{
+  cursor: pointer;
+  font-weight: normal;
+}
+
+/* tekst */
+.guide{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  cursor: pointer;
+  opacity:inherit;
+  color: black;
+  padding: 0;
+}
+
+h1{
+  font-family: 'Roboto Slab', serif;
+  cursor: pointer;
+}
+
+h1:hover, .h2:hover, h3:hover, h4:hover, span:hover, .guide:hover{
+  color: var(--blue);
+}
+
+.h2{
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  opacity: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+h3{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+h4{
+  font-family: 'Roboto Slab', serif;
+  cursor: pointer;
+  margin-left: 60px;
+}
+
+span{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#streg{
+  margin-top: -30px;
+  margin-left: -5px;
+}
+
+#streg1{
+  margin-left: 50px;
+  margin-top: -30px;
+}
+
+p{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* wrapperen */
+#wrap {
+  margin: auto; /* centrerer alt! */
+}
