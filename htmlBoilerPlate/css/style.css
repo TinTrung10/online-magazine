@@ -285,6 +285,13 @@ p{
   margin-bottom: 0;
 }
 
+/* stor skærm */
+@media only screen and (min-width: 1600px) {
+  body {
+    margin: 0 15vw;
+}
+}
+
 /* wrapperen */
 #wrap {
   margin: auto; /* centrerer alt! */
